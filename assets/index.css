@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.98);
+  z-index: 30;
+}
+nav > div {
+  margin-top: 12px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin: 1em 5%;
+}
+.main-menu {
+  float: left;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGZpbGw9IiMyMjIiIGQ9Ik04OTguMTk0IDM1NS44NGgtNzkwLjY3NGMtMjguOTY1IDAtNTIuNjYzLTIzLjY5OC01Mi42NjMtNTIuNjYzdjBjMC0yOC45NjUgMjMuNjk4LTUyLjY2MyA1Mi42NjMtNTIuNjYzaDc5MC42NzRjMjguOTY1IDAgNTIuNjYzIDIzLjY5OCA1Mi42NjMgNTIuNjYzdjBjMCAyOC45NjUtMjMuNjk4IDUyLjY2My01Mi42NjMgNTIuNjYzek04OTguMTk0IDYwMy4wNjNoLTc5MC42NzRjLTI4Ljk2NSAwLTUyLjY2My0yMy42OTgtNTIuNjYzLTUyLjY2M3YwYzAtMjguOTY1IDIzLjY5OC01Mi42NjMgNTIuNjYzLTUyLjY2M2g3OTAuNjc0YzI4Ljk2NSAwIDUyLjY2MyAyMy42OTggNTIuNjYzIDUyLjY2M3YwYzAgMjguOTY1LTIzLjY5OCA1Mi42NjMtNTIuNjYzIDUyLjY2M3pNODk4LjE5NCA4NTAuMjg2aC03OTAuNjc0Yy0yOC45NjUgMC01Mi42NjMtMjMuNjk4LTUyLjY2My01Mi42NjN2MGMwLTI4Ljk2NSAyMy42OTgtNTIuNjYzIDUyLjY2My01Mi42NjNoNzkwLjY3NGMyOC45NjUgMCA1Mi42NjMgMjMuNjk4IDUyLjY2MyA1Mi42NjN2MGMwIDI4Ljk2NS0yMy42OTggNTIuNjYzLTUyLjY2MyA1Mi42NjN6Ij48L3BhdGg+PC9zdmc+);
+}
+.search {
+  float: right;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxnIGlkPSJpY29tb29uLWlnbm9yZSI+PC9nPjxwYXRoIGZpbGw9IiM2OTY5NjkiIGQ9Ik05NTQuMzY4IDkwOS44MjRsLTI3MS44NzItMjcxLjg3MmM0MS40NzItNTUuMjk2IDY0LjUxMi0xMjQuNDE2IDY0LjUxMi0xOTguMTQ0LTQuNjA4LTE5My41MzYtMTYxLjI4LTM1MC4yMDgtMzUwLjIwOC0zNTAuMjA4cy0zNDUuNiAxNTYuNjcyLTM0NS42IDM0NS42YzAgMTg4LjkyOCAxNTYuNjcyIDM0NS42IDM0NS42IDM0NS42IDczLjcyOCAwIDE0Mi44NDgtMjMuMDQwIDE5OC4xNDQtNjQuNTEybDI3MS44NzIgMjcxLjg3MmMyMy4wNDAgMjMuMDQwIDY0LjUxMiAyNy42NDggODcuNTUyIDQuNjA4IDIzLjA0MC0xOC40MzIgMjMuMDQwLTU5LjkwNCAwLTgyLjk0NHpNMTY2LjQgNDM1LjJjMC0xMjkuMDI0IDEwMS4zNzYtMjMwLjQgMjMwLjQtMjMwLjRzMjMwLjQgMTAxLjM3NiAyMzAuNCAyMzAuNC0xMDEuMzc2IDIzMC40LTIzMC40IDIzMC40Yy0xMjkuMDI0IDAtMjMwLjQtMTAxLjM3Ni0yMzAuNC0yMzAuNHoiPjwvcGF0aD48L3N2Zz4=);
+}
+h1 {
+  text-align: center;
+}
+.body--has-modal {
+  overflow-y: scroll; // Forces there to be a scrollbar on the side, even if ti's not needed.
+}
+
+.wrapper {
+  height: 100%;
+  overflow-y: scroll;  // add scrollbar to wrapper
+}
+
+.wrapper--no-scrollbar {
+  overflow: hidden;
+}
+.content {
+   margin: 60px auto;
+   width: 80%;
+}
+.content img {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+.modal {
+  padding-top: 60px;
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.modal--is-active {
+  display: block;
+}
+.modal .close {
+/*  position: fixed;
+  top: 60px;
+  left: 10%;*/
+}
+.modal img {
+  width: 100%;
+  height: auto;
+}
